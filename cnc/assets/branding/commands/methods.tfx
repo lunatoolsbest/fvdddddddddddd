@@ -1,0 +1,10 @@
+[8;27;100t
+$[clear]
+- udp
+- tcp
+- socket
+
+syntax:
+method ip port time
+e.x:
+udp 70.70.70.70 80 60

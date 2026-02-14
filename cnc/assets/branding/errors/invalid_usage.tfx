@@ -1,0 +1,4 @@
+Invalid Usage.
+Usage: <method> <target> <port> <duration> [cons=N]
+Example: dns 70.70.70.70 80 60
+Example w cons: discord 1.2.3.4 53 60 cons=3

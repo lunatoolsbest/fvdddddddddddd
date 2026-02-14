@@ -1,0 +1,14 @@
+[ Attack Info ]
+Status │  Sent succesfully!
+Host   │  $[attack.Target]
+Method │  $[attack.Method]
+Port   │  $[attack.Port]
+Time   │  $[attack.Time]
+[ Target Info ]
+Org    │  $[attack.Org]
+Region │  $[attack.Region]
+Country│  $[attack.Country]
+Running│  $[my.ongoing]/$[my.concurrents]
+
+$[sleep(2000)]
+$[include(methods.tfx)]

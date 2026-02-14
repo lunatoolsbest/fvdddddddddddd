@@ -1,0 +1,20 @@
+﻿$[clear]
+Username: $[my.username]
+Max Attack Time: $[my.maxtime] secs
+Concurrents: $[my.concurrents]
+Cooldown: $[my.cooldown] secs
+User Total Attack Count: $[my.total_attacks]
+User Ongoing Attack Count: $[my.ongoing]
+VIP Status: $[my.vip]
+API Status: $[my.api]
+Administrator Status: $[my.admin]
+Bypass PowerSaving Status: $[my.power_saving_bypass]
+Bypass SpamProtection Status: $[my.spam_bypass]
+Bypass Blacklist Status: $[my.blacklist_bypass]
+Days Since Plan Creation: $[my.days_since_creation] days
+Days Till Plan Expiry: $[my.expiry] days
+Plan Expiry Date: $[my.expiry_fmt]
+Account Created By: $[my.created_by]
+Account Creation Date: $[my.creation_date]
+User Roles: $[my.roles]
+VIP Role: $[my.role(hold)]

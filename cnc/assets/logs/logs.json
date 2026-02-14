@@ -1,0 +1,43 @@
+{
+    "discord": {
+        "attack": {
+            "enabled": false,
+            "webhook": ""
+        },
+        "blacklist": {
+            "enabled": false,
+            "webhook": ""
+        },
+        "login": {
+            "enabled": false,
+            "webhook": ""
+        },
+        "admin": {
+            "enabled": false,
+            "webhook": ""
+        },
+        "user": {
+            "enabled": false,
+            "webhook": ""
+        }
+    },
+
+    "admin_actions": {
+        "enabled": true
+    },
+    "user_actions": {
+        "enabled": true
+    },
+    "commands": {
+        "enabled": true
+    },
+    "attacks": {
+        "enabled": true
+    },
+    "logins": {
+        "enabled": true
+    },
+    "blacklist": {
+        "enabled": true
+    }
+}

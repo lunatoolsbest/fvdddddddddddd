@@ -1,0 +1,52 @@
+$[my.admin]                   - returns true/false - admin status
+$[my.vip]                     - returns true/false - vip status  
+$[my.api]                     - returns true/false - api access status
+$[my.power_saving_bypass]     - returns true/false - power saving bypass status
+$[my.spam_bypass]             - returns true/false - spam bypass status
+$[my.blacklist_bypass]        - returns true/false - blacklist bypass status
+
+$[my.username]                - current username
+$[my.role(role)]              - returns true/false depending if the user has the role in ()
+$[my.roles]                   - lists all roles that the user has, seperated with commas
+$[my.ssh_client]              - ssh client information
+$[my.created_by]              - who created this account
+
+$[my.expiry_fmt]              - formatted expiry e.g Jan 19 2038
+$[my.full_expiry]             - full expiry format e.g 106751d 23h 47m  
+$[my.expiry]                  - expiry in days
+$[my.cooldown]                - cooldown time in seconds
+$[my.maxtime]                 - max attack time in seconds
+$[my.total_attacks]           - total attacks in the database for the user
+$[my.concurrents]             - max concurrent attacks
+$[my.ongoing]                 - current ongoing attacks
+
+$[cnc.online]                 - users online count
+$[cnc.ongoing]                - total ongoing attacks
+$[cnc.maxongoing]             - cnc total slots
+$[cnc.cooldown]               - global cooldown seconds remaining
+$[cnc.botcount]               - fake bot count for display
+$[cnc.total_attacks]          - cnc total attacks
+$[cnc.user_count]             - amount of users in the database
+$[cnc.uptime]                 - formatted cnc uptime
+
+$[attack.id]                  - unique attack identifier
+$[attack.target]              - attack target ip/host
+$[attack.port]                - attack target port
+$[attack.time]                - attack duration
+$[attack.method]              - attack method name
+$[attack.country]             - target country
+$[attack.org]                 - target organization
+$[attack.region]              - target region
+$[attack.delay]               - attack process delay in ms
+
+$[spinner]                    - animated spinner
+$[sleep(ms)]                  - sleep for set amount of MS
+$[clear]                      - clear screen command
+$[time]                       - current time e.g 13:34
+$[date]                       - current date e.g 08-02 (month-day)
+$[include(file.tfx)]          - loads and renders another tfx file
+
+funnel.json
+{HOST}                         - target host
+{PORT}                        - target port  
+{TIME}                         - attack time

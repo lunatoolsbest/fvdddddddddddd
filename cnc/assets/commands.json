@@ -1,0 +1,49 @@
+{
+    "custom_banners": [
+        {
+            "name": "help",
+            "description": "View help banner.",
+            "require_role": {
+                "custom_role": {
+                    "enabled": false,
+                    "role_name": ""
+                },
+                "vip": false,
+                "mod": false,
+                "admin": false
+            },
+            "banner_path": "assets/branding/commands/help.tfx",
+            "command_aliases": ["h", "?", "commands"]
+        },
+        {
+            "name": "methods",
+            "description": "View methods banner.",
+            "require_role": {
+                "custom_role": {
+                    "enabled": false,
+                    "role_name": ""
+                },
+                "vip": false,
+                "mod": false,
+                "admin": false
+            },
+            "banner_path": "assets/branding/commands/methods.tfx",
+            "command_aliases": ["m"]
+        },
+        {
+            "name": "plan",
+            "description": "View plan banner.",
+            "require_role": {
+                "custom_role": {
+                    "enabled": false,
+                    "role_name": ""
+                },
+                "vip": false,
+                "mod": false,
+                "admin": false
+            },
+            "banner_path": "assets/branding/commands/plan.tfx",
+            "command_aliases": ["info"]
+        }
+    ]
+}

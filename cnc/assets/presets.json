@@ -1,0 +1,66 @@
+{
+  "presets": [
+    {
+      "name": "basic",
+      "concurrents": 1,
+      "maxtime": 300,
+      "api_access": false,
+      "vip": false,
+      "cooldown": 10,
+      "admin": false,
+      "bypass_power_saving": false,
+      "bypass_spam_protection": false,
+      "bypass_blacklist": false,
+      "roles": [],
+      "expiry_days": 365
+    },
+    {
+      "name": "vip",
+      "concurrents": 3,
+      "maxtime": 600,
+      "api_access": true,
+      "vip": true,
+      "cooldown": 5,
+      "admin": false,
+      "bypass_power_saving": false,
+      "bypass_spam_protection": false,
+      "bypass_blacklist": false,
+      "roles": [
+        "vip"
+      ],
+      "expiry_days": 365
+    },
+    {
+      "name": "premium",
+      "concurrents": 5,
+      "maxtime": 900,
+      "api_access": true,
+      "vip": true,
+      "cooldown": 3,
+      "admin": false,
+      "bypass_power_saving": true,
+      "bypass_spam_protection": false,
+      "bypass_blacklist": false,
+      "roles": [
+        "premium"
+      ],
+      "expiry_days": 365
+    },
+    {
+      "name": "staff",
+      "concurrents": 10,
+      "maxtime": 1800,
+      "api_access": true,
+      "vip": true,
+      "cooldown": 0,
+      "admin": false,
+      "bypass_power_saving": true,
+      "bypass_spam_protection": true,
+      "bypass_blacklist": true,
+      "roles": [
+        "staff"
+      ],
+      "expiry_days": 365
+    }
+  ]
+}

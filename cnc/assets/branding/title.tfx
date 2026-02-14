@@ -1,0 +1,1 @@
+$[time]  •  $[date]  |  Online: $[cnc.online]  •  Ongoing: $[cnc.ongoing]/$[cnc.maxongoing]  •  Your ongoing: $[my.ongoing]/$[my.concurrents]  |  Uptime: $[cnc.uptime]
